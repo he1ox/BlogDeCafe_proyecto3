@@ -6,6 +6,7 @@
     --primario: #784D3C;
     --blanco:#FFF;
     --negro:#000;
+    --gris:#e1e1e1;
 }
 
 html {
@@ -145,5 +146,41 @@ img {
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem;
+    }
+}
+
+.entrada {
+    border-bottom: .1rem var(--gris) solid;
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Boton y modificadores */
+
+.boton {
+    /* Toma todo el espacio disponible
+    util en los dispositivos moviles */
+    display: block;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--fuenteHeadings);
+    color: var(--blanco);
+    margin-bottom: 2rem;
+}
+
+.boton--primario {
+    background-color: var(--negro);
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
     }
 }
