@@ -238,11 +238,8 @@ img {
 
 @media (min-width: 768px) {
     .sobre-nosotros {
-        display: flex;
-        justify-content: space-between;
-    }
-    .sobre-nosotros__imagen,
-    .sobre-nosotros__texto {
-        flex-basis: calc(50% - 1rem);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
     }
 }
